@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="g-recaptcha" data-sitekey="6Lfe8SETAAAAADLVEh8TIP5vkKaCmW53_X3EiMAn"></div>
+    <button type="submit"> Save </button>
+  </form>
+</body>
+</html>
